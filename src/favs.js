@@ -18,6 +18,14 @@ function Favs(props) {
     const storage = JSON.parse(window.localStorage.getItem("favs"))
     const [results, setresults] = useState(storage)
     const markFav = (obj, isFav) => {
+        const mappedRes = results.map(each => {
+            return {
+                ...each,
+                isFav: obj.imdbID === each.imdbID ? isFav : each.isFav
+            }
+        })
+        console.log("sssssssssssssss", mappedRes, obj)
+        setresults(mappedRes)
         syncStorage("", obj, isFav)
     }
     return (
@@ -27,7 +35,7 @@ function Favs(props) {
                     {
                         results && results.length
                             ? results.map(each => {
-                                return <Card key={each.imdbID} {...each} data={each} markFav={markFav} hideButton={true} />
+                                return <Card key={each.imdbID} {...each} data={each} markFav={markFav} />
                             })
                             : <p>No movies in your favourite list</p>
                     }
