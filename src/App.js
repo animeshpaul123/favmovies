@@ -72,7 +72,7 @@ function App(props) {
   }
   const onClickSearch = () => {
     setloading(true)
-    axios.get(`http://www.omdbapi.com/?s=${search}&type=${Selected.toLowerCase()}&apikey=44a4d11c&page=1`)
+    axios.get(`https://www.omdbapi.com/?s=${search}&type=${Selected.toLowerCase()}&apikey=44a4d11c&page=1`)
       .then(({ data }) => {
         if (data.Response == "True") {
           console.log("data => ", data)

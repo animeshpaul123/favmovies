@@ -8,7 +8,7 @@ function Detail(props) {
     const [data, setdata] = useState(null)
 
     useEffect(() => {
-        axios.get(`http://www.omdbapi.com/?i=${props.match.params.id}&&apikey=44a4d11c`)
+        axios.get(`https://www.omdbapi.com/?i=${props.match.params.id}&&apikey=44a4d11c`)
             .then(({ data }) => {
                 setdata(data)
             })
