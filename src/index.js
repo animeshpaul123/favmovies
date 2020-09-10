@@ -16,7 +16,7 @@ const AppNew = <Switch>
 </Switch>
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={window.location.pathname || ''}>
     {AppNew}
   </BrowserRouter>,
   document.getElementById('root')
