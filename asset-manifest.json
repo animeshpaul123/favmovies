@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/favmovies/static/css/main.15070f6e.chunk.css",
+    "main.css": "/favmovies/static/css/main.38eb5abd.chunk.css",
     "main.js": "/favmovies/static/js/main.ddd789f4.chunk.js",
     "main.js.map": "/favmovies/static/js/main.ddd789f4.chunk.js.map",
     "runtime-main.js": "/favmovies/static/js/runtime-main.e1f69e81.js",
@@ -9,10 +9,10 @@
     "static/js/2.6f1cd7c6.chunk.js": "/favmovies/static/js/2.6f1cd7c6.chunk.js",
     "static/js/2.6f1cd7c6.chunk.js.map": "/favmovies/static/js/2.6f1cd7c6.chunk.js.map",
     "index.html": "/favmovies/index.html",
-    "precache-manifest.a477f22c3a5c2d388e8040ef6fef104e.js": "/favmovies/precache-manifest.a477f22c3a5c2d388e8040ef6fef104e.js",
+    "precache-manifest.491bb3b89d20843606b44e54e5d22f48.js": "/favmovies/precache-manifest.491bb3b89d20843606b44e54e5d22f48.js",
     "service-worker.js": "/favmovies/service-worker.js",
     "static/css/2.c37a399a.chunk.css.map": "/favmovies/static/css/2.c37a399a.chunk.css.map",
-    "static/css/main.15070f6e.chunk.css.map": "/favmovies/static/css/main.15070f6e.chunk.css.map",
+    "static/css/main.38eb5abd.chunk.css.map": "/favmovies/static/css/main.38eb5abd.chunk.css.map",
     "static/js/2.6f1cd7c6.chunk.js.LICENSE.txt": "/favmovies/static/js/2.6f1cd7c6.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/favmovies/static/media/logo.5d5d9eef.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.e1f69e81.js",
     "static/css/2.c37a399a.chunk.css",
     "static/js/2.6f1cd7c6.chunk.js",
-    "static/css/main.15070f6e.chunk.css",
+    "static/css/main.38eb5abd.chunk.css",
     "static/js/main.ddd789f4.chunk.js"
   ]
 }
