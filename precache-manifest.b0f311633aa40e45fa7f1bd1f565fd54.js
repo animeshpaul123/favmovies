@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b2bfa8b087ca6f21580b591647f8d9c9",
+    "revision": "cd429c8ea3b28025aaab24e2d5ead8aa",
     "url": "/favmovies/index.html"
   },
   {
-    "revision": "500cd74c2a05430f4848",
+    "revision": "3c5eadbab55d66dca5fc",
     "url": "/favmovies/static/css/2.c37a399a.chunk.css"
   },
   {
-    "revision": "49672b65445b24be49ad",
-    "url": "/favmovies/static/css/main.38eb5abd.chunk.css"
+    "revision": "70ceb86cf2eaebbb0db7",
+    "url": "/favmovies/static/css/main.ace0714b.chunk.css"
   },
   {
-    "revision": "500cd74c2a05430f4848",
-    "url": "/favmovies/static/js/2.818a9119.chunk.js"
+    "revision": "3c5eadbab55d66dca5fc",
+    "url": "/favmovies/static/js/2.ce37284c.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/favmovies/static/js/2.818a9119.chunk.js.LICENSE.txt"
+    "url": "/favmovies/static/js/2.ce37284c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "49672b65445b24be49ad",
-    "url": "/favmovies/static/js/main.e83b9ab5.chunk.js"
+    "revision": "70ceb86cf2eaebbb0db7",
+    "url": "/favmovies/static/js/main.1a300f92.chunk.js"
   },
   {
     "revision": "bddca9d25406ac2f2d64",
