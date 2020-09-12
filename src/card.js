@@ -18,7 +18,7 @@ function Card(props) {
                 <p className="release-date">{Year}</p>
                 {
                     !hideButton
-                        ? <Button color={isFav ? "red" : "blue"} onClick={() => markFav(data, !isFav)}>{isFav ? "remove" : "mark as favourite"}</Button>
+                        ? <Button color={isFav ? "red" : "blue"} onClick={() => markFav(data, !isFav)}>{isFav ? "Unfavourite" : "Favourite"}</Button>
                         : null
                 }
 

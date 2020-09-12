@@ -30,3 +30,29 @@
         object-fit: cover;
     }
 }
+.favs-wrapper {
+    padding: 1px;
+    min-height: 100vh;
+    background-color: #cfcfcf;
+    .card img {
+        max-height: 573px;
+    }
+    .favs-inner {
+        max-width: 1300px; 
+        margin: 90px auto 0
+    }
+    span {
+        position: absolute;
+        left: 19px;
+        top: 19px;
+        cursor: pointer;
+    }  
+}
+.no-movies {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}

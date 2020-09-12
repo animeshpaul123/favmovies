@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Card from './card'
 import './card.scss'
+import { Icon } from 'rsuite'
 
 const syncStorage = (maindata, data, isFav) => {
     const local = JSON.parse(window.localStorage.getItem("favs")) || []
@@ -18,29 +19,28 @@ function Favs(props) {
     const storage = JSON.parse(window.localStorage.getItem("favs"))
     const [results, setresults] = useState(storage)
     const markFav = (obj, isFav) => {
-        const mappedRes = results.map(each => {
-            return {
-                ...each,
-                isFav: obj.imdbID === each.imdbID ? isFav : each.isFav
-            }
-        })
+        const mappedRes = results.filter(each => each.imdbID !== obj.imdbID)
         console.log("sssssssssssssss", mappedRes, obj)
         setresults(mappedRes)
         syncStorage("", obj, isFav)
     }
     return (
-        <div className="favs-wrapper" style={{ maxWidth: "1300px", margin: "60px auto 0" }}>
-            {
-                <div className="main-content">
-                    {
-                        results && results.length
-                            ? results.map(each => {
-                                return <Card key={each.imdbID} {...each} data={each} markFav={markFav} />
-                            })
-                            : <p>No movies in your favourite list</p>
-                    }
-                </div>
-            }
+        <div className="favs-wrapper">
+            <div className="favs-inner">
+                <span onClick={() => props.history.goBack()}><Icon icon="back-arrow" size="2x" /></span>
+
+                {
+                    <div className="main-content">
+                        {
+                            results && results.length
+                                ? results.map(each => {
+                                    return <Card key={each.imdbID} {...each} data={each} markFav={markFav} />
+                                })
+                                : <p className="no-movies"> No movies in your favourite list</p>
+                        }
+                    </div>
+                }
+            </div>
         </div>
     )
 }

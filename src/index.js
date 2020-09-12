@@ -4,7 +4,7 @@ import './index.scss';
 import 'rsuite/dist/styles/rsuite-default.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom'
 import Detail from './detail';
 import Favs from './favs';
 
@@ -16,9 +16,9 @@ const AppNew = <Switch>
 </Switch>
 
 ReactDOM.render(
-  <BrowserRouter basename={window.location.pathname || ''}>
+  <HashRouter basename={window.location.pathname || ''}>
     {AppNew}
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 

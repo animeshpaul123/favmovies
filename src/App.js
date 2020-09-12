@@ -85,6 +85,11 @@ function App(props) {
           }
           setloading(false)
         }
+        else {
+          Alert.warning(data.Error)
+          setloading(false)
+          setresults(null)
+        }
 
       })
       .catch(e => {
