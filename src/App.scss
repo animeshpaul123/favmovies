@@ -62,6 +62,22 @@
     }
   }
 }
+.search-wrapper {
+  .others {
+    display: flex;
+    align-items: center;
+    span {
+      padding: 0 5px;
+    display: flex;
+    height: 38px;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+      input {
+        width: 50px;
+      }
+    }
+  }
+}
 .loading-wrapper {
   display: flex;
   justify-content: center;

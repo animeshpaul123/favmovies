@@ -10,9 +10,22 @@
         width: 30%;
         margin: 0 15px 30px;
     }
+    a:hover {
+        text-decoration: none;
+    }
     .img-wrapper {
+        min-height: 573px;
         width: 100%;
         background-color: #c9c9c9;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #a2a2a2;
+        }
     }
     .content {
         text-align: left;
@@ -39,10 +52,11 @@
     }
     .favs-inner {
         max-width: 1300px; 
-        margin: 90px auto 0
+        margin: 90px auto 0;
+        padding: 0 20px;
     }
     span {
-        position: absolute;
+        position: fixed;
         left: 19px;
         top: 19px;
         cursor: pointer;

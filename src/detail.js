@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import './detail.scss'
-import { Icon } from 'rsuite'
+import { Icon, Loader } from 'rsuite'
 
 function Detail(props) {
     console.log("sasdasdasdasdasdas", props)
@@ -22,14 +22,16 @@ function Detail(props) {
                 <Icon icon="back-arrow" size="2x" />
             </span>
             <img src={Poster} alt="" />
-            <p>{Genre}</p>
-            <p>{Released}</p>
             <p>{Title}</p>
+            <p>{Released}</p>
+            <p>{Genre}</p>
             <p>{Writer}</p>
             <p>{Actors}</p>
         </div>
     </div>
-        : null
+        : <div className="loader-wrapper">
+            <Loader content="loading..." />
+        </div>
 }
 
 export default Detail
